@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+body{
+    background:linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container { 
+    height: 80%;
+    width: 80%;
+    background-color: rgb(255,255,255,.1);
+    border-radius: 20px;
+}
+
+body::after{
+    content:" ";  /* اجبارية */
+     width: 100%;
+     height: 100%;
+     background-color: rgb(158, 0, 0);    
+     position: absolute; 
+     z-index: -1;  /* عشان تنزل تحت المربع */
+     clip-path: circle(40% at right 70%) ; /* عشان ترسم الدائرة */
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin:auto; 
+    padding: 20px 0px;
+}
+
+nav .logo{
+ color: #fff;
+ text-decoration: none; /* عشان تشيل الخط */
+ font-size: 30px;
+ text-transform: uppercase;
+ letter-spacing: 3px; /* تباعد بين الحروف */
+}
+
+
+nav ul li{
+    display:inline-block;
+    margin: 0 6px;
+    list-style: none ;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+      color: #e80202;
+
+}
+
+.content{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .text{
+    color: #fff;
+    width: 40%;
+}
+
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 35px; /* تباعد بين السطور */
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.content .imge{
+    width: 40%
+}
+
+.content .imge img{
+ width: 40px;
+
+}
+
+.Y
+{
+    width: 400px;
+    
+    margin-left: 50px;
+}
+/* استخدام وسائط الاستعلام لتحديد نطاق العرض للشاشة */
+/* @media (min-width: 958px) and (max-width: 1150px) {
+    body {
+         width: 350px;
+    }
+  }
+
+  @media (max-width:950px){
+    .content{
+       flex-direction: column;
+       justify-content: center;
+     .content .image, .content .text
+       width: 80%;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
